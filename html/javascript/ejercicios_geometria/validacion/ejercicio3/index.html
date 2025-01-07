@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="../../../../favicon.ico"/>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<title>Formulario areas con validacion Version 3</title>
+
+		<script>
+			function areatriangulo()
+			{
+			var errores1 = "";
+			if (document.formulario1.base1.value=="")
+			{
+				document.formulario1.base1.value=0;
+			}
+			else
+			{
+				errores1 = errores1 + " Error en base 1";
+			}
+			if (document.formulario1.altura1.value=="")
+			{
+				document.formulario1.altura1.value=0;
+			}
+			else
+			{
+				errores1 = errores1 + " Error en altura 1";
+			}
+			base = document.formulario1.base1.value;
+			altura = document.formulario1.altura1.value;
+			document.formulario1.resultado1.value = (base * altura) / 2;
+			document.formulario1.error1.value = errores1;
+			}
+
+			function areatrapecio()
+			{
+			var errores2 = "";
+			if (document.formulario2.basemayor.value=="")
+			{
+				document.formulario2.basemayor.value=0;
+			}
+			else
+			{
+				errores2 = errores2 + " Error en base mayor";
+			}
+			if (document.formulario2.basemenor.value=="")
+			{
+				document.formulario2.basemenor.value=0;
+			}
+			else
+			{
+				errores2 = errores2 + " Error en base menor";
+			}
+			if (document.formulario2.altura2.value=="")
+			{
+				document.formulario2.altura2.value=0;
+			}
+			else
+			{
+				errores2 = errores2 + "Error en altura 2 ";
+			}
+			basemayor = document.formulario2.basemayor.value;
+			basemenor = document.formulario2.basemenor.value;
+			altura2 = document.formulario2.altura2.value;
+			document.formulario2.resultado2.value = ((basemayor * basemenor) / 2) * altura2;
+			document.formulario2.error2.value = errores2;
+			}
+
+			function arearombo()
+			{
+			var errores3 = "";
+			if (document.formulario3.diagonalmayor.value=="")
+			{
+				document.formulario3.diagonalmayor.value=0;
+			}
+			else
+			{
+				errores3 = errores3 + " Error diagonal mayor";
+			}
+			if (document.formulario3.diagonalmenor.value=="")
+			{
+				document.formulario3.diagonalmenor.value=0;
+			}
+			else
+			{
+				errores3 = errores3 + " Error en diagonal menor";
+			}
+			diagonalmayor = document.formulario3.diagonalmayor.value;
+			diagonalmenor = document.formulario3.diagonalmenor.value;
+			document.formulario3.resultado3.value = (diagonalmayor * diagonalmenor) / 2;
+			document.formulario3.error3.value = errores3;
+			}
+		</script>
+	</head>
+	<body>
+		<form name="formulario1">
+			<label for="base1">Base</label>
+			<input type="text" id="base1" name="base1" required><br>
+
+			<label for="altura1">Altura</label>
+			<input type="text" id="altura1" name="altura1" required><br>
+
+			<label for="resultado1">Resultado</label>
+			<input type="text" id="resultado1" name="resultado1" readonly><br>
+
+			<input type="button" value="Calcular" onClick="areatriangulo();"/><br><br>
+			
+			<label for="error1">Errores</label>
+			<input type="text" id="error1" name="error1" readonly><br>
+		</form>
+
+		<form name="formulario2">
+			<label for="basemayor">Base mayor</label>
+			<input type="text" id="basemayor" name="basemayor" required><br>
+
+			<label for="basemenor">Base menor</label>
+			<input type="text" id="basemenor" name="basemenor" required><br>
+
+			<label for="altura2">Altura</label>
+			<input type="text" id="altura2" name="altura2" required><br>
+
+			<label for="resultado2">Resultado</label>
+			<input type="text" id="resultado2" name="resultado2" readonly><br>
+
+			<input type="button" value="Calcular" onClick="areatrapecio();"/><br><br>
+
+			<label for="error2">Errores</label>
+			<input type="text" id="error2" name="error2" readonly><br>
+		</form>
+
+		<form name="formulario3">
+			<label for="diagonalmayor">Diagonal mayor</label>
+			<input type="text" id="diagonalmayor" name="diagonalmayor" required><br>
+
+			<label for="diagonalmenor">Diagonal menor</label>
+			<input type="text" id="diagonalmenor" name="diagonalmenor" required><br>
+
+			<label for="resultado3">Resultado</label>
+			<input type="text" id="resultado3" name="resultado3" readonly><br>
+
+			<input type="button" value="Calcular" onClick="arearombo();"/><br><br>
+
+			<label for="error3">Errores</label>
+			<input type="text" id="error3" name="error3" readonly><br>
+		</form>
+	</body>
+</html>

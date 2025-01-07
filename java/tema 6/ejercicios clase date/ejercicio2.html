@@ -1,0 +1,20 @@
+<SCRIPT languaje="javascript">
+   var fecha = new Date();
+   document.write("Fecha hoy "+fecha+"<br>");
+
+   var fecha30 = fecha.getDate();
+   fecha.setDate(fecha30+30);
+   document.write("mas 30 dias "+fecha+"<br>");
+
+   var fecha50 = fecha.getDate();
+   fecha.setDate(fecha50-50);
+   document.write("menos 50 dias "+fecha+"<br>");
+
+   var fecha1 = fecha.getFullYear();
+   fecha.setFullYear(fecha1+2);
+   document.write("mas 2 años "+fecha+"<br>");
+
+   var fecha2 = fecha.getHours();
+   fecha.setHours(fecha2-24);
+   document.write("menos 24 horas "+fecha);
+</SCRIPT>

@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<title>Login - Vsevolod Zyabkin</title>
+		<style>
+
+		body {
+		background-image:url(image/back.png);
+		background-size: 100% 100%;
+		cursor: url("image/cursor/cursor_none.png"), auto;
+		}
+		
+		h1 {
+		text-align:center;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:90px;
+		}
+
+		.title {
+		border-radius: 5px;
+		background-color: #f2f2f2cc;
+		padding:5px;
+		margin-bottom:30px;
+		}
+
+		.titulo{
+		font-weight:bold;
+		font-size:30px;
+		font-family:Arial, Helvetica, sans-serif;
+		}
+		
+		input[type=text],input[type=password], select {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-size:20px;
+		}
+
+		input[type=submit] {
+		width: 100%;
+		background-color: #4CAF50;
+		font-size:20px;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+		background-color: #45a049;
+		}
+
+		div {
+		border-radius: 5px;
+		background-color: #f2f2f2cc;
+		padding: 20px;
+		padding-bottom: 8px;
+		}
+
+		#error-message {
+		color: red;
+		font-size: 16px;
+		font-weight:bold;
+		display: none;
+		}
+			
+		</style>
+	</head>
+	<body>
+		<div class="title">
+			<h1>Sebas Instituto Cots</h1> 
+		</div>
+
+		<div>
+		  <form action="config/submit.php" method="post"> 
+			<label for="fname" class="titulo">Usuario</label>
+			<input type="text" id="fname" name="username" placeholder="Usuario..">
+
+			<label for="lname" class="titulo">Contraseña</label>
+			<input type="password" id="lname" name="password" placeholder="Contraseña..">
+			<span id="error-message">Usuario o contraseña incorrectos.</span>
+		  
+			<input type="submit" value="Submit">
+		  </form>
+		</div>
+	</body>
+	<script>
+		document.addEventListener("keydown", function(event) {
+			const forbiddenCombos = [
+				{ ctrl: true, shift: true, key: 'i' },
+				{ ctrl: true, shift: true, key: 'j' },
+				{ ctrl: true, key: 'u' },
+				{ ctrl: true, key: 's' },
+				{ ctrl: true, key: 'c' },
+				{ key: 'f12' }
+			];
+			forbiddenCombos.forEach(combo => {
+				if (
+					(combo.ctrl ? event.ctrlKey : true) &&
+					(combo.shift ? event.shiftKey : true) &&
+					event.key.toLowerCase() === combo.key
+				) {
+					event.preventDefault();
+				}
+			});
+		});
+		document.addEventListener("contextmenu", function(event) {
+			event.preventDefault();
+		});
+	</script>
+	<script>
+		const urlParams = new URLSearchParams(window.location.search);
+		if (urlParams.has('error')) {
+			const errorMessage = document.getElementById("error-message");
+			errorMessage.style.display = "block"; // Mostrar el mensaje de error
+		}
+	</script>
+</html>

@@ -1,0 +1,28 @@
+<script language="javascript">
+   var e,s,d;
+   e = prompt("Introduce tu edad","");
+   s = prompt("Introduce tu sexo","");
+   d = parseInt(prompt("Cuanto dinero tienes?",""));
+   if (e<=18 && d>=100)
+   {
+   	document.write("Puedes entrar");
+   }
+   else
+   {
+      if (e>=18 && s=="mujer" && d>40)
+      {
+   	document.write("Puedes entrar");
+      }
+      else
+      {
+         if (e>=18 && s=="hombre" && d>=40)
+         {
+         document.write("Puedes entrar");
+         }
+         else
+         {
+         document.write("No puedes entrar");
+         }
+      }
+   }
+   </script>

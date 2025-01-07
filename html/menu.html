@@ -1,0 +1,272 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<title>Menu Desplegable</title>
+		<style type="text/css">
+			
+			* {
+				margin:0px;
+				padding:0px;
+				text-align:center;
+			}
+			
+			body {
+			background-image:url(image/back.png);
+			background-size: 100% 100%;
+			cursor: url("image/cursor/cursor_none.png"), auto;
+			}
+			
+			@keyframes animation {
+			0%   {
+			background-color: red; left:0px; top:0px;
+			/*transform: rotate(360deg);*/
+			}
+			16.6% {background-color: orange; left:200px; top:0px;}
+			33.3% {background-color: yellow;}
+			50% {background-color: green;}
+			66.6% {background-color: blue;}
+			83.3% {background-color: indigo;}
+			100% {background-color: violet;}
+			}
+			
+			#rotateButton {
+			display: inline-block;
+			transition: transform 0.5s ease;
+			}
+
+			.rotate {
+			  transform: rotate(360deg);
+			}
+
+			#header {
+				margin:auto;
+				width:700px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				font-size:20px;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+				/*animation-name: animation;
+				animation-iteration-count: infinite;
+				animation: animation 2s infinite linear;*/			
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+				cursor: url("image/cursor/hand_point.png"), pointer;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a>Html</a>
+					<ul>
+						<li><a>Relacion 0</a>
+							<ul>
+								<li><a href="html/relacion00/index.html">Ejercicio 1</a></li>
+								<li><a href="html/relacion00/index1.html">Ejercicio 2</a></li>
+								<li><a href="html/relacion00/index2.html">Ejercicio 3</a></li>
+								<li><a href="html/relacion00/index3.html">Ejercicio 4</a></li>
+								<li><a href="html/relacion00/pagina1.html">Ejercicio 5</a></li>
+							</ul>
+						</li>
+						<li><a>Relacion 1</a>
+							<ul>
+								<li><a href="html/relacion01/rel1_ej1.htm">Ejercicio 1</a></li>
+								<li><a href="html/relacion01/rel1_ej2.htm">Ejercicio 2</a></li>
+								<li><a href="html/relacion01/rel1_ej3.htm">Ejercicio 3</a></li>
+								<li><a href="html/relacion01/rel1_ej4.htm">Ejercicio 4</a></li>
+								<li><a href="html/relacion01/rel1_ej5.htm">Ejercicio 5</a></li>
+								<li><a href="html/relacion01/rel1_ej6.htm">Ejercicio 6</a></li>
+							</ul>
+						</li>
+						<li><a>Relacion 2</a>
+							<ul>
+								<li><a href="html/relacion02/rel2_ej1.html">Ejercicio 1</a></li>
+								<li><a href="html/relacion02/rel2_ej2.html">Ejercicio 2</a></li>
+								<li><a href="html/relacion02/rel2_ej3.html">Ejercicio 3</a></li>
+								<li><a href="html/relacion02/rel2_ej4.html">Ejercicio 4</a></li>
+								<li><a href="html/relacion02/rel2_ej5.html">Ejercicio 5</a></li>
+							</ul>
+						</li>
+						<li><a>Relacion 3</a>
+							<ul>
+								<li><a href="html/relacion03/rel3_ej1.html">Ejercicio 1</a></li>
+								<li><a href="html/relacion03/rel3_ej2.html">Ejercicio 2</a></li>
+								<li><a href="html/relacion03/rel3_ej3.html">Ejercicio 3</a></li>
+								<li><a href="html/relacion03/rel3_ej4.html">Ejercicio 4</a></li>
+								<li><a href="html/relacion03/rel3_ej5.html">Ejercicio 5</a></li>
+								<li><a href="html/relacion03/rel3_ej6.html">Ejercicio 6</a></li>
+							</ul>
+						</li>
+						<li><a>Relacion 4</a>
+							<ul>
+								<li><a href="html/relacion04/rel4_ej1_preguntas.html">Ejercicio 1</a></li>
+								<li><a href="html/relacion04/rel4_ej2.html">Ejercicio 2</a></li>
+								<li><a href="html/relacion04/rel4_ej3.html">Ejercicio 3</a></li>
+								<li><a href="html/relacion04/rel4_ej4.html">Ejercicio 4</a></li>
+							</ul>
+						</li>
+						<li><a>Relacion 5</a>
+							<ul>
+								<li><a href="html/relacion05/rel5_ej1.html">Ejercicio 1</a></li>
+							</ul>
+						</li>
+						<li><a>Relacion 6</a>
+							<ul>
+								<li><a href="html/relacion06/rel6_ej1.html">Ejercicio 1</a></li>
+							</ul>
+						</li>
+						<li><a>Relacion 7</a>
+							<ul>
+								<li><a href="html/relacion07/rel7_ej1.html">Ejercicio 1</a></li>
+								<li><a href="html/relacion07/rel7_ej2.html">Ejercicio 2</a></li>
+								<li><a href="html/relacion07/rel7_ej3.html">Ejercicio 3</a></li>
+								<li><a href="html/relacion07/rel7_ej4.html">Ejercicio 4</a></li>
+								<li><a href="html/relacion07/rel7_ej5.html">Ejercicio 5</a></li>
+								<li><a href="html/relacion07/rel7_ej6.html">Ejercicio 6</a></li>
+							</ul>
+						</li>
+						<li><a href="html/ejercicio_vacacional/index.html">Ejercicio Vacacional</a></li>
+					</ul>
+				</li>
+				<li><a>Css</a>
+					<ul>
+						<li><a href="css/guiaestilos/guia.html">Guia</a></li>
+						<li><a>Relacion 1</a>
+							<ul>
+								<li><a href="css/relacion01/rel01_ej1.html">Ejercicio 1</a></li>
+								<li><a href="css/relacion01/rel01_ej2.html">Ejercicio 2</a></li>
+								<li><a href="css/relacion01/rel01_ej3.html">Ejercicio 3</a></li>
+								<li><a href="css/relacion01/rel01_ej4.html">Ejercicio 4</a></li>
+								<li><a href="css/relacion01/rel01_ej5.html">Ejercicio 5</a></li>
+								<li><a href="css/relacion01/rel01_ej6.html">Ejercicio 6</a></li>
+								<li><a href="css/relacion01/rel01_ej7.html">Ejercicio 7</a></li>
+								<li><a href="css/relacion01/rel01_ej8.html">Ejercicio 8</a></li>
+								<li><a href="css/relacion01/rel01_ej9.html">Ejercicio 9</a></li>
+								<li><a href="css/relacion01/rel01_ej9.html">Ejercicio 10</a></li>
+							</ul>
+						</li>
+						<li><a>Relacion 2</a>
+							<ul>
+								<li><a href="css/relacion02/rel02_ej1.html">Ejercicio 1</a></li>
+								<li><a href="css/relacion02/rel02_ej2.html">Ejercicio 2</a></li>
+								<li><a href="css/relacion02/rel02_ej3.html">Ejercicio 3</a></li>
+								<li><a href="css/relacion02/rel02_ej4.html">Ejercicio 4</a></li>
+							</ul>
+						</li>
+						<li><a href="css/css00/css00.html">css00</a></li>
+						<li><a href="css/css01/css01.html">css01</a></li>
+						<li><a href="css/css01.1/css01.1.html">css01.1</a></li>
+						<li><a href="css/css01.2/css01.2.html">css01.2</a></li>
+						<li><a href="css/css04/index.html">css04</a></li>
+						<li><a href="css/css06/acerca_de_crea.html">css06</a></li>
+						<li><a href="css/css07/on_this_page.html">css07</a></li>
+						<li><a href="css/css08/index.html">css08</a></li>
+					</ul>
+				</li>
+				<li><a>Html 5</a>
+					<ul>
+						<li><a href="css/html5-css07/on_this_page.html">html5-css07</a></li>
+						<li><a href="css/html5-css08/index.html">html5-css08</a></li>
+					</ul>
+				</li>
+				<li><a>Formularios</a>
+					<ul>
+						<li><a href="formularios/ejercicio1/index.html">Ejercicio 1</a></li>
+					</ul>
+				</li>
+				<li><a>Javascript</a>
+					<ul>
+						<li><a href="javascript/ejercicio5/index.html">Ejercicio 5</a></li>
+						<li><a>Ejercicios geometria</a>
+							<ul>
+								<li><a href="javascript/ejercicios_geometria/ejercicio1/index.html">Ejercicio 1</a></li>
+								<li><a href="javascript/ejercicios_geometria/ejercicio1.2/index.html">Ejercicio 1.2</a></li>
+								<li><a href="javascript/ejercicios_geometria/ejercicio1.3/index.html">Ejercicio 1.3</a></li>
+								<li><a href="javascript/ejercicios_geometria/ejercicio2/index.html">Ejercicio 2</a></li>
+								<li><a href="javascript/ejercicios_geometria/ejercicio3/index.html">Ejercicio 3</a></li>
+								<li><a href="javascript/ejercicios_geometria/ejercicio4/index.html">Ejercicio 4</a></li>
+								<li><a href="javascript/ejercicios_geometria/ejercicio5/index.html">Ejercicio 5</a></li>
+								<li><a href="javascript/ejercicios_geometria/areas/index.html">Areas</a></li>
+								<li><a href="javascript/ejercicios_geometria/validacion/ejercicio1/index.html">Validacion 1</a></li>
+								<li><a href="javascript/ejercicios_geometria/validacion/ejercicio2/index.html">Validacion 2</a></li>
+								<li><a href="javascript/ejercicios_geometria/validacion/ejercicio3/index.html">Validacion 3</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript/fruteria/index.html">Fruteria</a></li>
+					</ul>
+				</li>
+				<!--<li><a href="#" id="rotateButton">Rotate</a></li>-->
+				<li><a href="config/logout.php" id="logoutButton">Log out</a></li>
+			</ul>
+		</div>
+	</body>
+	<script>
+	  document.getElementById('rotateButton').addEventListener('click', function(event) {
+		event.preventDefault();
+		this.classList.toggle('rotate');
+	  });
+	</script>
+	<script>
+		document.addEventListener("keydown", function(event) {
+			const forbiddenCombos = [
+				{ ctrl: true, shift: true, key: 'i' },
+				{ ctrl: true, shift: true, key: 'j' },
+				{ ctrl: true, key: 'u' },
+				{ ctrl: true, key: 's' },
+				{ ctrl: true, key: 'c' },
+				{ key: 'f12' }
+			];
+			forbiddenCombos.forEach(combo => {
+				if (
+					(combo.ctrl ? event.ctrlKey : true) &&
+					(combo.shift ? event.shiftKey : true) &&
+					event.key.toLowerCase() === combo.key
+				) {
+					event.preventDefault();
+				}
+			});
+		});
+		document.addEventListener("contextmenu", function(event) {
+			event.preventDefault();
+		});
+	</script>
+</html>

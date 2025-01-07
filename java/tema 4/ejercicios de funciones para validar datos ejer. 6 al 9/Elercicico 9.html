@@ -1,0 +1,31 @@
+<SCRIPT LANGUAGE='JavaScript'>
+var numero;
+function es_perfecto(numero)
+{
+      suma=0
+      for(j=1;j<i;j++)
+      {
+         if(i%j == 0)
+         {
+         suma=suma+j;
+         }
+      }
+         if(suma==i)
+         {
+            return 1;
+         }
+            return 0;
+}
+function escribe_perfectos(numero)
+{
+   for(i=1;i<=numero;i++)
+   {
+      if(es_perfecto(i))
+      {
+         document.write("Numero ideal "+i+"<br>");
+      }
+   }
+}
+numero = parseInt(prompt("Introduce el limite",""));
+escribe_perfectos(numero);
+</SCRIPT>

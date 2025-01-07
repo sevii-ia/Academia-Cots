@@ -1,0 +1,41 @@
+<script language="javascript">
+   var n,o;
+   n = parseInt(prompt("Introduce primera nota",""));
+   o = parseInt(prompt("Introduce segunda nota",""));
+   if (n<0 && n>10 || o<0 && o>10)
+   {
+   	alert("FUERA DE RANGO");
+   }
+   else
+   {
+      if (n>=0 && n<=4 || o>=0 && o<=4)
+      {
+         alert("SUSPENDIDO");
+      }
+      else
+      {
+      	if (n>=5 && n<=6 || o>=5 && o<=6)
+      	{
+            alert("SUFICIENTE");
+      	}
+      	else
+      	{
+      		if (n>=7 && n<=8 || o>=7 && o<=8)
+      		{
+               alert("NOTABLE");
+      		}
+      		else
+      		{
+               if (n>=9 && n<=10 || o>=9 && o<=10)
+               {
+                  alert("SOBRESALIENTE");
+               }
+               else
+               {
+                  alert("nada");
+               }
+      		}
+      	}
+      }
+   }
+   </script>

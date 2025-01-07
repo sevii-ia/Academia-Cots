@@ -1,0 +1,33 @@
+<script language="javascript">
+   var h;
+   h=parseInt(prompt("Introduce hora del dia",""));
+   if (h>=6 && h<=11)
+   {
+      alert("mañana");
+   }
+    else
+    {
+    	if (h>=12 && h<=19)
+      {
+        alert("tarde");
+      }
+      else
+      {
+         if (h>=20 && h<=23)
+         {
+            alert("noche");
+         }
+         else
+         {
+         	if (h>=0 && h<=5)
+         	{
+         		alert("madrugada");
+         	}
+         	else
+         	{
+         		alert("no puede corresponder a una hora del día")
+         	}
+         }
+      }
+    }
+   </script>

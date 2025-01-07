@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="../../../favicon.ico"/>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<title>Formulario areas</title>
+
+		<script>
+			function areatriangulo(base1, altura1, total1)
+			{
+			areat1 = (base1 * altura1) / 2;
+			total1.value = areat1;
+			}
+
+			function areatrapecio(basemayor2, basemenor2, altura2, total2)
+			{
+			areat2 = ((basemayor2 * basemenor2) / 2) * altura2;
+			total2.value = areat2;
+			}
+
+			function arearombo(diagonalmayor3, diagonalmenor3, total3)
+			{
+			areat3 = (diagonalmayor3 * diagonalmenor3) / 2;
+			total3.value = areat3;
+			}
+		</script>
+	</head>
+	<body>
+		<form name="formulario1">
+			<label for="base1">Base</label>
+			<input type="number" id="base1" name="base1" required><br>
+
+			<label for="altura1">Altura</label>
+			<input type="number" id="altura1" name="altura1" required><br>
+
+			<label for="resultado1">Resultado</label>
+			<input type="number" id="resultado1" name="resultado1" readonly><br>
+		</form>
+
+		<form name="formulario2">
+			<label for="basemayor">Base mayor</label>
+			<input type="number" id="basemayor" name="basemayor" required><br>
+
+			<label for="basemenor">Base menor</label>
+			<input type="number" id="basemenor" name="basemenor" required><br>
+
+			<label for="altura2">Altura</label>
+			<input type="number" id="altura2" name="altura2" required><br>
+
+			<label for="resultado2">Resultado</label>
+			<input type="number" id="resultado2" name="resultado2" readonly><br>
+		</form>
+
+		<form name="formulario3">
+			<label for="diagonalmayor">Diagonal mayor</label>
+			<input type="number" id="diagonalmayor" name="diagonalmayor" required><br>
+
+			<label for="diagonalmenor">Diagonal menor</label>
+			<input type="number" id="diagonalmenor" name="diagonalmenor" required><br>
+
+			<label for="resultado3">Resultado</label>
+			<input type="number" id="resultado3" name="resultado3" readonly><br>
+
+			<input type="button" value="Calcular" onClick="areatriangulo(document.formulario1.base1.value,document.formulario1.altura1.value,document.formulario1.resultado1);areatrapecio(document.formulario2.basemayor.value,document.formulario2.basemenor.value,document.formulario2.altura2.value,document.formulario2.resultado2);arearombo(document.formulario3.diagonalmayor.value,document.formulario3.diagonalmenor.value,document.formulario3.resultado3);"/><br><br>
+		</form>
+	</body>
+</html>
