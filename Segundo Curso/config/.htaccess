@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/config/(submit|logout)\.php$ [NC]
+RewriteRule ^(submit|logout)\.php$ - [L]
+
+RewriteRule ^.*$ /index.html [L]

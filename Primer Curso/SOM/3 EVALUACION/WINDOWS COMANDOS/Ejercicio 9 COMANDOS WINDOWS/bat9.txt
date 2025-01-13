@@ -1,0 +1,6 @@
+@echo off
+set /p rutaa="Introduce la ruta del archivo a comprimir: "
+set /p nombrea="Introduce el nombre del archivo a comprimir: "
+set /p nombrec="Introduce el nombre para el archivo comprimido: "
+compact /c %rutaa%\%nombrea% %rutaa%\%nombrec%.txt
+pause

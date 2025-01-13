@@ -1,0 +1,27 @@
+<script language="javascript">
+   var s,a;
+   s = parseInt(prompt("Introduce suma de sueldo",""));
+   a = parseInt(prompt("Introduce años de antiguedad",""));
+   if (s<500 && a>=10)
+   {
+   	document.write(s+(s/100*20));
+   }
+   else
+   {
+      if (s<500 && a<=10)
+      {
+   	document.write(s+(s/100*5));
+      }
+      else
+      {
+         if (s>=500)
+         {
+         document.write(s);
+         }
+         else
+         {
+         document.write("nada");
+         }
+      }
+   }
+   </script>

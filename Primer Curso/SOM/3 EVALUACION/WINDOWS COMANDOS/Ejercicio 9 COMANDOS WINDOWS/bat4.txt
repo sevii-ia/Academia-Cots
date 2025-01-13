@@ -1,0 +1,6 @@
+@echo off
+set /p rutaa="Introduce la ruta del archivo a eliminar: "
+set /p nombrea="Introduce el nombre del archivo a eliminar: "
+del %rutaa%\%nombrea%
+echo Archivo eliminado.
+pause

@@ -1,0 +1,23 @@
+cd ..\..
+md Control\Alumnos\a2015 Control\Alumnos\a2016\mes1 Control\Unidades\ilustra Control\Unidades\copy Control\Unidades\tema Control\Estudios\Alicante
+cd Control\Alumnos\a2016\mes1
+md ..\..\..\Unidades\tema\tema1\Introduccion ..\..\..\Unidades\tema\tema2
+md C:\Control\Estudios\Alicante\centro
+tree C:\Control > C:\Control\arbolinicial.txt
+cd ..\..\..
+rd Estudios\Alicante Unidades\tema\tema1 Unidades\tema\tema2 Alumnos\a2016\mes1 /s
+ren Unidades\ilustra ilus
+move Unidades\ilus Unidades\tema
+echo " " > Alumnos\vacio.txt
+copy arbolinicial.txt Unidades\copy\copiaarbol.txt
+type Unidades\copy\copiaarbol.txt
+echo Este es el arbol que teniamos al principio > Unidades\copy\articulo.txt
+echo Aqui hemos creado todos los directorios >> Unidades\copy\articulo.txt
+echo En este archivo se muestra el arbol >> Unidades\copy\articulo.txt
+copy Unidades\copy\articulo.txt + Unidades\copy\copiaarbol.txt Unidades\copy\datos.txt
+copy Unidades\copy\*.txt Unidades
+attrib +h arbolinicial.txt
+dir > contenido.txt
+del *o.txt
+tree /f > arbolfin.txt
+attrib +r a*.txt

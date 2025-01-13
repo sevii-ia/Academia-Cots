@@ -1,0 +1,11 @@
+[
+    {"username": "Vsevolod", "password": "$2b$12$0ZQr2b19vMJkgCU/skvjQOam7/Elhf8eNBbNFfn/wtM/ABtEkgWg."},
+    {"username": "Hector", "password": "$2y$10$FF9dSjmsPxdhKl/ALpB9LuRrdz/FkYRz4vOrWzHF.ygozVUpRry42"},
+    {"username": "Manresa", "password": "$2y$10$A5r5bCdJAEnQnUVo0MMtfezHot8vkWpz4HMDjaQMqZSF6XrwCiMDi"},
+    {"username": "Israel", "password": "$2y$10$j62OdYb9UNE3GnKdI0V8U.LEGC.CrFrFCjolQvW/phevzk/.aU0GK"},
+    {"username": "Alejo", "password": "$2y$10$3GTa.ylnCqIVAeI4nWIcMeTYI2/HnN0ndysQZ90oujz.o6auIjuB."},
+    {"username": "Itziar", "password": "$2y$10$kN/GiRYjus4WqhzGsrpaOOi/ZGzwPOd5UFXALZb8MRQLEqgDUo6vm"},
+    {"username": "Pablo", "password": "$2y$10$ljTVpRt2mIRzwwIMtQdLJ.uPchDp/5QvBeZHESHiWSCp6/IYcOWRO"},
+    {"username": "Hugo", "password": "$2y$10$JuRGIhhg7w6QvLOumlO9FO.8Ym9RMPZNtZBKrcO3jNS9gz5.LnQiO"},
+    {"username": "Manu", "password": "$2y$10$MrMG0wE5r.sovIrYmTK9Aepo8NohOJAaxIM.i3z1QYbG27.BVVidS"}
+]

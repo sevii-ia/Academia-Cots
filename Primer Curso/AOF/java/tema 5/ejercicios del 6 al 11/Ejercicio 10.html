@@ -1,0 +1,11 @@
+<script language="javascript">
+var clasificaciones=new Array("Oscar", "Isabel", "Juan", "Marta", "Ángel", "Eva");
+clasificaciones.unshift("Elsa");
+clasificaciones.pop();
+clasificaciones.splice(2,0,"Inés","Daniel");
+clasificaciones.splice(5,0,"Marta");
+clasificaciones.splice(7,1);
+document.write("El ganador/a es: "+clasificaciones[0]+"<br>");
+document.write("Ha quedado en segundo lugar: "+clasificaciones[1]+"<br>");
+document.write("Y el tercer lugar es para: "+clasificaciones[2]+"<br>");
+</script>

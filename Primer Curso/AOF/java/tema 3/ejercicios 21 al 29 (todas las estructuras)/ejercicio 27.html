@@ -1,0 +1,22 @@
+<SCRIPT LANGUAGE='JavaScript'>
+var numero,suma=0,ideal;
+numero=parseInt(prompt("Introduce un numero",""));
+for(i=1;i<=numero;i++)
+{
+if(numero%i == 0)
+{
+document.write(i+"<br>");
+suma=suma+i;
+}
+}
+ideal=suma-numero
+if(ideal==numero)
+{
+document.write("Numero ideal"+"<br>");
+}
+else
+{
+document.write("Numero no ideal"+"<br>");
+}
+document.write("Suma de divisores: "+suma);
+</SCRIPT>

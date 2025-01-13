@@ -1,0 +1,8 @@
+@echo off
+help > C:\comandos.txt
+echo Archivo creado
+type C:\comandos.txt
+pause
+sort /r > C:\inverso.txt
+echo Archivo creado
+type C:\inverso.txt

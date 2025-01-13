@@ -1,0 +1,17 @@
+<script language="javascript">
+var numeros="012345678"
+if(numeros.length%2)
+{
+   i=numeros.length/2+0.5;
+}
+else
+{
+   i=numeros.length/2;
+}
+var inicio1=0;
+var num=numeros.lastIndexOf(i-1);
+var fin2=numeros.length;
+var numero1=numeros.substring(inicio1, num);
+var numero2=numeros.substring(num, fin2);
+document.write(numero1+"<br>"+numero2);
+</script>

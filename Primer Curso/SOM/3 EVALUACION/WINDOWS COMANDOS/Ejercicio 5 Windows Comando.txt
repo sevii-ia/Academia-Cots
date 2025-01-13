@@ -1,0 +1,21 @@
+cd ..\..
+md INICIO
+cd INICIO
+md jose pepe antonio andrea rufino
+md jose\nominas jose\cartas jose\fax
+md jose\cartas\enviadas jose\cartas\registro
+md jose\fax\remitido jose\fax\acusado
+cd C:\INICIO\jose\cartas\registro
+md ..\..\fax\acusado\devuelto ..\..\..\antonio\enero\1quinc
+cd ..\..\..\antonio\enero\1quinc
+tree C:\INICIO\jose > C:\INICIO\andrea\todo1.txt
+copy ..\..\..\andrea\todo1.txt ..\..\..\pepe\todo2.txt
+ren ..\..\..\pepe fernando
+ren ..\..\..\fernando\todo2.txt fernando.txt
+move c:\INICIO\rufino C:\INICIO\fernando
+echo Vsevolod > C:\INICIO\fernando\n1.txt
+echo Zyabkin > C:\INICIO\fernando\n2.txt
+echo Zyabkin > C:\INICIO\fernando\n3.txt
+copy C:\INICIO\fernando\n1.txt + C:\INICIO\fernando\n2.txt + C:\INICIO\fernando\n3.txt C:\INICIO\jose\nominas\soyyo.txt
+cd C:\INICIO
+tree /f

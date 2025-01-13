@@ -1,0 +1,26 @@
+cd \
+md Sistemaop\linux Sistemaop\Windows\instalar Sistemaop\Windows\aplicacion
+cd Sistemaop\linux
+echo Comando basicos > linux1.txt
+echo Utilizacion de modo grafico > linux2.txt
+echo usuarios y grupos de usuarios > linux3.txt
+copy linux1.txt+linux2.txt+linux3.txt linuxtotal.txt
+copy linuxtotal.txt copiatotal.txt
+attrib +h copiatotal.txt
+attrib +s +r linuxtotal.txt
+attrib L*.txt
+comp linux1.txtl inux2.txt
+attrib -h -s -r *.*
+md Sistemaop\linux\A1 Sistemaop\linux\A2\A21 Sistemaop\linux\A2\A22\A221
+xcopy Sistemaop\linux\*.txt Sistemaop\Windows
+find "modo" C:\linuxtotal.txt
+del Windows\*1.txt
+echo Software libre >> copiatotal.txt
+fc /l copiatotal.txt linuxtotal.txt
+cd ..\..
+tree /f Sistemaop > Sistemaop\Windows\aplicacion\arbol.txt
+move Sistemaop\Windows\aplicacion\arbol.txt Sistemaop\Windows
+ren Sistemaop\Windows\arbol.txt tree.txt
+dir Windows\?i*
+xcopy Sistemaop\Linux\*.* Sistemaop\Windows
+type Sistemaop\Windows\tree.txt

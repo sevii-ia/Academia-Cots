@@ -1,0 +1,28 @@
+<script language="javascript">
+   var i,s,h;
+   i = parseInt(prompt("Introduce suma de ingreso",""));
+   s = prompt("Estas soltero?","");
+   h = prompt("Tienes hijos?","");
+   if (i>=12000)
+   {
+   	document.write("El crédito se concede");
+   }
+   else
+   {
+      if (i<=12000 && i>10000 && s=="no")
+      {
+      document.write("El crédito se concede");
+      }
+      else
+      {
+         if (i<=12000 && i>10000 && s=="si" && h=="no")
+         {
+         document.write("El crédito se concede");
+         }
+         else
+         {
+         document.write("El crédito no se concede");
+         }
+      }
+   }
+   </script>

@@ -1,0 +1,15 @@
+h1,h2 {
+font-size:16;
+text-indent:20px;
+margin-top:50px;
+border-width:2px;
+border-style:solid;
+font-family:Comic Sans MS;
+}
+p {
+margin-top:50px;
+border-width:2px;
+border-style:solid;
+padding:20px;
+text-transform:uppercase;
+}

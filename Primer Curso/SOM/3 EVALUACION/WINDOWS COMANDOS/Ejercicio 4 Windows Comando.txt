@@ -1,0 +1,17 @@
+chkdsk
+cd ..\..
+md COMANDO7
+CD COMANDO7
+md a\a1 a\a2\a21 a\a2\a22\a221
+echo NOMBRE DE LOS ALUMNOS > A\NOMBRE.TXT
+echo CONTRASEÑA DE LOS ALUMNOS > A\CONTRA.TXT
+CD A
+ATTRIB
+ATTRIB +R CONTRA.TXT
+echo APELLIDOS D LOS ALUMNOS >> NOMBRE.TXT
+ATTRIB +H CONTRA.TXT
+ATTRIB +s nombre.txt
+cls
+comp nombre.txt contra.txt
+compact nombre.txt /c
+compact nombre.txt /u

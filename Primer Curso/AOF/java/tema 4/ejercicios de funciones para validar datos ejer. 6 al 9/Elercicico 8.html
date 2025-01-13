@@ -1,0 +1,26 @@
+<SCRIPT LANGUAGE='JavaScript'>
+var numero;
+function es_primo(numero)
+{
+      for(j=2;j<i;j++)
+      {
+         if(i%j == 0)
+         {
+            return 0;
+         }
+      }
+      return 1;
+   }
+function escribe_primos(numero)
+{
+   for(i=1;i<=numero;i++)
+   {
+      if(es_primo(i))
+      {
+         document.write(i+"<br>");
+      }
+   }
+}
+numero = parseInt(prompt("Introduce el limite",""));
+escribe_primos(numero);
+</SCRIPT>

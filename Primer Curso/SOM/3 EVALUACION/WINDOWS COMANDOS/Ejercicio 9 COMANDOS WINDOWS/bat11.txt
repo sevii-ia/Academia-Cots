@@ -1,0 +1,7 @@
+@echo off
+help color
+set /p numc="Introduce el número del color al que quieres cambiar: "
+color %numc%
+set /p ruta="Introduce la ruta del archivo que quieres ocultar: "
+attrib +h %ruta%
+echo Archivo oculto.

@@ -1,0 +1,16 @@
+<SCRIPT LANGUAGE='JavaScript'>
+var email="isabelsuarez@cotsalicante.com";
+var posicion1=email.indexOf("@");
+var posicion2=email.indexOf(".");
+var fin=email.length;
+var dominio=email.substring(posicion1+1, fin);
+if(posicion1>1 && posicion2>1)
+{
+alert("Corecto");
+}
+else
+{
+alert("Incorecto");
+}
+document.write(dominio);
+</SCRIPT>

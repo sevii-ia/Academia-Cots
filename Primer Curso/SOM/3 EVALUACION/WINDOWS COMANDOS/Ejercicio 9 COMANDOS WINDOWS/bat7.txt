@@ -1,0 +1,4 @@
+@echo off
+start winword
+start excel
+start calc

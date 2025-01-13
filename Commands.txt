@@ -1,6 +1,0 @@
-git init
-git add .
-git commit -m "Додав папки html та java"
-git remote add origin https://github.com/sevii-ia/Academia-Cots.git
-git branch -M main
-git push -u origin main --force

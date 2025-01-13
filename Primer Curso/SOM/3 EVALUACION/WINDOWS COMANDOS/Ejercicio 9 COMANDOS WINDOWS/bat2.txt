@@ -1,0 +1,3 @@
+@echo off
+set /p web="Por favor, introduce la URL de la página web: "
+start %web%

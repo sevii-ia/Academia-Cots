@@ -1,0 +1,6 @@
+@echo off
+help
+pause
+cls
+set /p ruta="Introduce una ruta para mostrar el arbol de directorios: "
+tree /A > %ruta%\arbol.txt

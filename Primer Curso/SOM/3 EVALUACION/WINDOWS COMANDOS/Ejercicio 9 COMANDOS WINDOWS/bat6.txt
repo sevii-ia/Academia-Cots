@@ -1,0 +1,6 @@
+@echo off
+echo La hora es %time%
+echo La Fecha es %date%
+echo Lista de procesos:
+tasklist
+pause

@@ -1,0 +1,16 @@
+cd C:\
+md COMANDO8
+cd COMANDO8
+echo Nombre de los alumnos > archivo1.txt
+echo Nombre de los asignaturas > archivo2.txt
+echo Nombre de los tutores >> archivo1.txt
+copy archivo1.txt copia1.txt
+md copias seguridad
+copy archivo1.txt + copia1.txt uni.txt
+copy a*.txt C:\COMANDO8\seguridad
+copy *.txt seguridad\todo.txt
+date
+dir
+del *1.txt
+del seguridad\*.txt
+exit

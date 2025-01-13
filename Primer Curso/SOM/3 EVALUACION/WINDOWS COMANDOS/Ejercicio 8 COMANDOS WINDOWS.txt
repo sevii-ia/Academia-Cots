@@ -1,0 +1,21 @@
+cd C:\
+md COMANDO10
+cd COMANDO10
+help PRINT > print1.txt
+prompt Vsevolod$G
+prompt $P$D
+prompt $P$G
+rd C:\COMANDO8
+ren C:\COMANDO9 CO9
+md copiacomando9
+copy CO9 copiacomando9\CO9
+sort print1.txt
+sort /r print1.txt > inverso.txt
+tasklist
+start WINWORD
+taskkill WINWORD.EXE
+time
+tree /f
+tree /f CO9 > arbol.txt
+ver
+type arbol.txt

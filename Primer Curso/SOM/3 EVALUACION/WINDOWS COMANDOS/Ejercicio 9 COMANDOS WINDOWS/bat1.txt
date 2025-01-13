@@ -1,0 +1,4 @@
+@echo off
+set /p nombre="Por favor, introduce tu nombre: "
+echo Bienvenido/a a mi programa, %nombre%.
+pause

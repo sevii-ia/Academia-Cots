@@ -1,0 +1,13 @@
+cd C:\
+md COMANDO9
+cd COMANDO9
+dir C:\ > contenido1.txt
+dir C:\W*
+echo Ejercicios Windows > Windows.txt
+echo Ejercicios Linux >> Windows.txt
+echo Ejercicios Shell >> Windows.txt
+fc contenido1.txt Windows.txt
+find "Windows" Windows.txt
+find "Windows" contenido1.txt
+help > ayuda.txt
+help RECOVER

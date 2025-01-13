@@ -1,0 +1,4 @@
+@echo off
+set /p comando="Introduce el nombre del comando para mostrar su ayuda: "
+help %comando%
+pause

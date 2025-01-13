@@ -1,0 +1,25 @@
+<SCRIPT LANGUAGE='JavaScript'>
+var n,m,o;
+n=parseInt(prompt("Introduce un número:",""));
+m=parseInt(prompt("Introduce otro número:",""));
+var o=n;
+if(n%5 && n<m)   //no
+{
+   o=o+4;
+   while(o<=m)
+   {
+	alert(o);
+	o=o+5;
+	n++;
+	}
+}
+else    //si
+{
+   while(o<=m)
+	{
+	alert(o);
+   o=o+5;
+	n++;
+	}
+}
+</SCRIPT>

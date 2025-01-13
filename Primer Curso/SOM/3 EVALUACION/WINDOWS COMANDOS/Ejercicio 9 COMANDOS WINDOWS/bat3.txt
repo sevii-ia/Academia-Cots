@@ -1,0 +1,8 @@
+@echo off
+set /p rutao="Introduce la ruta del archivo original: "
+set /p nombrear="Introduce el nombre del archivo original: "
+set /p rutad="Introduce la ruta donde deseas copiar el archivo: "
+set /p nombreco="Introduce el nombre para la copia: "
+copy %rutao%\%nombrear% %rutad%\%nombreco%
+echo Copia realizada.
+pause

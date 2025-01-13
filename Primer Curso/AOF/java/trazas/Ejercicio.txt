@@ -1,0 +1,22 @@
+Ejercicio 12
+a) 10
+b) 8
+c) 1134
+
+Ejercicio 13
+d) 100
+
+Ejercicio 14
+d) 25
+
+Elercicio 15
+52
+
+Ejercicio 16
+a) no lo hace porque el contador es igual a 0
+
+b)termina cuando contador igual a 10
+
+Ejercicio 17
+Hay que introducir el n
+ 

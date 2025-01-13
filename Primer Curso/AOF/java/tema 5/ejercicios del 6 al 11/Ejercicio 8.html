@@ -1,0 +1,17 @@
+<script language="javascript">
+var Meses=new Array("lunes", "febrero", "martes", "abril", "miércoles", "junio", "jueves", "viernes", "agosto", "sábado", "octubre", "domingo", "diciembre");
+Meses.shift(0,1)
+Meses.unshift("Enero");
+Meses.splice(2,1,prompt("Introduce meses","marzo"));
+Meses.splice(4,1,prompt("Introduce meses","mayo"));
+Meses.splice(6,1,prompt("Introduce meses","julio"));
+Meses.splice(7,1);
+Meses.splice(8,1,prompt("Introduce meses","septiembre"));
+Meses.splice(10,1,prompt("Introduce meses","noviembre"));
+for(i=0; i<Meses.length; i++)
+{
+	document.write(Meses[i]+"<br>");
+}
+</script>
+
+

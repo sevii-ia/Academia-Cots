@@ -1,0 +1,52 @@
+<SCRIPT LANGUAGE="Javascript">
+var d,m,a,dn,mn,an,edad;
+function fecha(d, m, a)
+{
+   if(m>=1 && m<=12)
+   {
+   	if(m==1 || m==5 || m==7 || m==8 || m==10 || m==12)
+   	{
+         if(d>=1 && d<=31)
+         {
+         	return 1;
+         }
+         //return 0;
+   	}
+   	else
+   	{
+      	if(m==3 || m==4 || m==9 || m==11)
+      	{
+         	if(d>=1 && d<=30)
+         	{
+            	return 1;
+         	}
+         	//return 0;
+      	}
+      	else
+      	{
+         	if(d>=1 && (d<=28 || d<=29))
+         	{
+         		return 1;
+         	}
+         	//return 0;
+      	}
+   	}
+   }
+   return 0;
+}
+d = parseInt(prompt("Introduce dia actual:",""));
+m = parseInt(prompt("Introduce mes actual:",""));
+a = parseInt(prompt("Introduce año actual:",""));
+dn = parseInt(prompt("Introduce dia de nacimiento:",""));
+mn = parseInt(prompt("Introduce mes de nacimiento:",""));
+an = parseInt(prompt("Introduce año de nacimiento:",""));
+if(fecha(d, m, a) && fecha(dn, mn, an))
+{
+	edad=a-an;
+	alert("Este año cumpliras "+edad+" años");
+}
+else
+{
+	alert("Fecha no es valida");
+}
+</SCRIPT>
