@@ -19,9 +19,44 @@ mysqli_select_db($enlace, $basedatos);
         {
             var error = "";
             var bandera = 0;
+            if(document.formulario.expediente.value=="")
+            {
+                error = error + "Expediente\n";
+                bandera = 1;
+            }
+            if(document.formulario.dni.value=="")
+            {
+                error = error + "DNI\n";
+                bandera = 1;
+            }
+            if(document.formulario.nombre.value=="")
+            {
+                error = error + "Nombre\n";
+                bandera = 1;
+            }
+            if(document.formulario.apellidos.value=="")
+            {
+                error = error + "Apellidos\n";
+                bandera = 1;
+            }
+            if(document.formulario.direccion.value=="")
+            {
+                error = error + "Direccion\n";
+                bandera = 1;
+            }
             if(document.formulario.provincias.value==0)
             {
                 error = error + "Provincia\n";
+                bandera = 1;
+            }
+            if(document.formulario.telefono.value=="")
+            {
+                error = error + "Telefono\n";
+                bandera = 1;
+            }
+            if(document.formulario.sexo.value=="")
+            {
+                error = error + "Sexo\n";
                 bandera = 1;
             }
             if(document.formulario.tutores.value==0)
