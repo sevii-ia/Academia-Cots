@@ -12,14 +12,6 @@ $personal=$_GET['personal'];
 $seleccion1 = "SELECT * FROM personal WHERE num_personal='$personal'";
 $result1 = mysqli_query($enlace, $seleccion1);
 $fila1=mysqli_fetch_array($result1);
-
-function actualizar()
-{
-    $personal="";
-    $seleccion1 = "SELECT * FROM personal WHERE num_personal='$personal'";
-    $result1 = mysqli_query($enlace, $seleccion1);
-    $fila1=mysqli_fetch_array($result1);
-}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -37,7 +29,7 @@ function actualizar()
 
             while($fila=mysqli_fetch_array($result))
             {
-            if($fila['num_personal']==$fila1['num_personal'])
+            if($fila1['num_personal']==$fila['num_personal'])
             {
             ?>
                 <option value="<?php echo $fila['num_personal']; ?>" selected>
