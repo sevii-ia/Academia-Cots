@@ -1,0 +1,27 @@
+Movil: solo hay que poner ruta para usuario
+
+Obligatorio: dar permiso de su carpeta, mostrar archivos ocultos, extensiones, NTUSER.DAT - NTUSER.MAN
+
+Superobligatorio: dar permiso de su carpeta, mostrar archivos ocultos, extensiones, NTUSER.DAT - NTUSER.MAN 
+ruta de carpeta .MAN, renombrar carpeta, nombre carpeta .MAN.V6
+
+Para escritorio remoto en sistema hay habilitar conexion remota
+
+%username%,%date%,%time% del /q sin pedir confirmacion, /s elimina archivos de subcarpeta C:\ruta\*.*
+for /d %%i in ("%USERPROFILE%\Documents\*") do rd /s /q "%%i"
+
+Equipo-Directivas-Windows-Seguridad-Directivas cuenta/Directiva contraseñas-Vigencia maxima de contraseña
+Equipo-Directivas-Windows-Seguridad-Directivas locales/Opciones seguridad-Inicio de sesion interactivo: titulo del mensaje para los usuarios que intentan iniciar una sesion
+Equipo-Directivas-Windows-Seguridad-Directivas locales/Asignacion de derechos usuario-Directiva Configuración-Cambiar la hora del sistema 
+Equipo-Directivas-Plantillas-Sistema-Administracion energia
+Equipo-Directivas-Plantillas-Windows-Windows Update-Configurar Actualizaciones
+Equipo-Directivas-Windows-Seguridad-Directivas locales/Asignacion de derechos usuario-Permitir Escritorio remoto
+Usuario-Directivas-Windows-Scripts-Inicio de sesion/Cierre de sesion
+Usuario-Directivas-Plantillas-Internet Explorer-Eliminar historial exploracion-Impedir acceso a dialogo Eliminar historial de exploracion
+Usuario-Directivas-Plantillas-Active Desktop-Active Desktop-Tapiz del escritorio
+Usuario-Directivas-Plantillas-Sistema-Inicio de sesion-Ejecutar estos programas cuando usuario inicie sesion
+Usuario-Directivas-Plantillas-Sistema-Perfiles de usuario-Limitar tamaño del perfil
+Usuario-Directivas-Plantillas-Menú Inicio barra tareas-Quitar icono Documentos del menu Inicio
+Usuario-Directivas-Plantillas-Menú Inicio barra tareas-Quitar menu Ejecutar del menu Inicio
+Usuario-Directivas-Plantillas-Sistema-Acceso de almacenamiento extraible-Todas clases de almacenamiento extraible
+Usuario-Directivas-Plantilla-Sistema-Opciones de Ctrl+Alt+Supr-Quitar Administrador de tareas

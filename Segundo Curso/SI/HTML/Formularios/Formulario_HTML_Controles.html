@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controles de Formulario</title>
+</head>
+<body>
+    <h1>Controles de Formulario HTML</h1>
+
+    <h2>Formulario básico</h2>
+    <form action="/submit" method="POST">
+	
+        <h3>Campo de texto</h3>
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" placeholder="Ingresa tu nombre">
+
+        <h3>Botones de opción (Radio)</h3>
+        <label><input type="radio" name="gender" value="male"> Hombre</label><br>
+        <label><input type="radio" name="gender" value="female"> Mujer</label><br>
+
+        <h3>Casilla de verificación (Checkbox)</h3>
+        <label><input type="checkbox" name="subscribe" value="yes"> Suscribirme al boletín</label><br>
+
+        <h3>Menú desplegable (Select)</h3>
+        <label for="country">País:</label>
+        <select id="country" name="country">
+            <option value="mx">México</option>
+            <option value="us">Estados Unidos</option>
+            <option value="es">España</option>
+        </select><br>
+		
+		
+		<br><br><br><br><br><br><br><br><br>
+
+        <h3>Área de texto (Textarea)</h3>
+        <label for="message">Mensaje:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+        <h3>Campo oculto</h3>
+        <input type="hidden" name="hiddenField" value="Valor oculto">
+
+        <h3>Carga de archivos</h3>
+        <label for="fileUpload">Subir archivo:</label>
+        <input type="file" id="fileUpload" name="fileUpload"><br>
+
+        <h3>Botón de envío</h3>
+        <input type="submit" value="Enviar">
+
+        <h3>Botón de reinicio</h3>
+        <input type="reset" value="Restablecer">
+		
+    </form>
+
+    <h2>Fieldset y Legend</h2>
+    <form>
+	
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="name">Nombre completo:</label>
+            <input type="text" id="name" name="name" placeholder="Ingresa tu nombre"><br>
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" placeholder="Ingresa tu edad">
+        </fieldset>
+		
+    </form>
+</body>
+</html>

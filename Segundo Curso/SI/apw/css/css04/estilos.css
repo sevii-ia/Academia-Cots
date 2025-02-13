@@ -1,0 +1,153 @@
+.contenedor {
+margin:0 auto;
+width:760px;
+}
+
+.cabecerablanca {
+
+}
+.cabecerablanca table {
+margin:0 auto;
+border-collapse:collapse;
+border-spacing:0px;
+border:0px;
+}
+
+.cabecerablanca td {
+padding:0px;
+border:0px;
+}
+
+.cabeceraceleste {
+background-color:#bdced6;
+padding-top:2px;
+height:24px;
+}
+
+.cabeceraceleste ul li a:link,.cabeceraceleste ul li a:visited,.cabeceraceleste ul li a:active,.cabeceraceleste ul li a:focus {
+font-size:0.8em;
+font-family:Arial, Helvetica, sans-serif;
+color:#003366;
+text-decoration:none;
+}
+
+.cabeceraceleste ul li a:hover {
+color:#003366;
+background-color:#e4ecef;
+text-decoration:none;
+}
+
+.cabeceraceleste ul,.cabeceraceleste li {
+margin-top:0px;
+margin-bottom:0px;
+padding-left:0px;
+display:inline;
+vertical-align:middle;
+}
+
+.cabeceraceleste ul {
+margin-right:87px;
+text-indent:5px;
+}
+
+.cabeceraceleste ul li {
+border-right:1px solid #003366;
+padding-left:2px;
+padding-right:5px;
+}
+
+.cabeceraceleste .lista2 {
+border-left:1px solid #003366;
+border-left:0px solid #003366;
+border-right-width:0px;
+float:right;
+}
+
+.cabeceraceleste .lista2 a:hover {
+color:#003366;
+background-color:#e4ecef;
+border-bottom:2px solid #ff6633;
+}
+
+.cabeceraoscura {
+background-color:#003366;
+padding-top:2px;
+height:24px;
+}
+
+.cabeceraoscura ul li a,.cabeceraoscura ul li a:link,.cabeceraoscura ul li a:visited,.cabeceraoscura ul li a:active,.cabeceraoscura ul li a:focus {
+font-size:0.7em;
+font-family:Arial, Helvetica, sans-serif;
+color:#ffffff;
+text-decoration:none;
+}
+
+.cabeceraoscura ul li a:hover {
+color:#003366;
+background-color:#e4ecef;
+text-decoration:none;
+}
+
+.cabeceraoscura ul,.cabeceraoscura li {
+margin-top:0px;
+margin-bottom:0px;
+padding-left:0px;
+display:inline;
+vertical-align:middle;
+}
+.cabeceraoscura ul li{
+border-right:1px solid #ffffff;
+padding-left:2px;
+padding-right:5px;
+}
+
+.cabeceraoscura .lista3{
+border-left:0px solid #ffffff;
+border-right-width:0px;
+float:right;
+}
+
+.cabeceraoscura .lista3 a:hover {
+color:#003366;
+background-color:#e4ecef;
+border-bottom:2px solid #00ff00;
+}
+
+.cabeceraoscura .lista3 .texto2 {
+border-right:0px solid #ffffff;
+padding-right:0px;
+}
+
+.cabeceraoscura .lista3 .texto2 a,.cabeceraoscura .lista3 .texto2 a:link,.cabeceraoscura .lista3 .texto2 a:visited,.cabeceraoscura .lista3 .texto2 a:active,.cabeceraoscura .lista3 .texto2 a:focus,.cabeceraoscura .lista3 .texto2 a:hover {
+font-size:0.7em;
+font-family:Arial, Helvetica, sans-serif;
+color:#ffffff;
+text-decoration:none;
+background-color:#003366;
+border-bottom:0px solid #00ff00;
+}
+
+.contenido {
+
+}
+
+.izquierda {
+float:left;	
+}
+
+.central {
+}
+
+.derecha {
+float:right;	
+}
+
+.pie {
+clear:both;
+background-color:#003366;
+}
+
+.pie a {
+color:#ffffff;
+text-decoration:none;
+}

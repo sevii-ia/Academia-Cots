@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="../../../favicon.ico"/>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<title>Nombre y apellidos</title>
+
+		<script>
+			function nombres()
+			{
+			nombre = document.formulario.nombre.value;
+			apellido1 = document.formulario.apellido1.value;
+			apellido2 = document.formulario.apellido2.value;
+			texto = nombre + " " + apellido1 + " " + apellido2;
+			document.formulario.resultado.value = texto;
+			}
+		</script>
+	</head>
+	<body>
+		<form name="formulario">
+			<label for="nombre">Nombre</label>
+			<input type="text" id="nombre" name="nombre"><br>
+
+			<label for="apellido1">Apellido 1</label>
+			<input type="text" id="apellido1" name="apellido1"><br>
+
+			<label for="apellido2">Apellido 2</label>
+			<input type="text" id="apellido2" name="apellido2"><br>
+
+			<input type="button" value="Calcular" onClick="nombres()"/><br><br>
+
+			<label for="resultado">Resultado</label>
+			<input type="text" id="resultado" name="resultado" readonly><br>
+		</form>
+	</body>
+</html>

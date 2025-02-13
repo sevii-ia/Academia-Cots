@@ -1,0 +1,50 @@
+.cuerpo {
+background-color:#ffff8a;
+}
+
+.estilo1 {
+color:#CC0033;
+text-align:center;
+font-weight:bold;
+font-size:12pt;
+font-family:Comic Sans MS;
+}
+
+.estilo2 {
+text-align:left;
+color:#FFFFFF;
+background-color:tomato;
+border-width:2px;
+border-style:solid;
+border-color:#000000;
+margin:20px;
+padding:20px;
+}
+
+.estilo3 {
+text-align:right;
+color:#FFFFFF;
+background-color:lightblue;
+padding:40px;
+}
+			
+#cuerpo21 {
+margin-left:150px;
+margin-right:150px;	
+background-color:#ffff8a;
+}
+
+#estilo22 {
+color:#3333cc;
+text-align:justify;
+font-weight:bold;
+font-size:12pt;
+}
+
+#estilo23 {
+color:yellow;
+font-size:10pt;
+text-align:justify;
+border-width:2px;
+background-color:#669966;
+}
